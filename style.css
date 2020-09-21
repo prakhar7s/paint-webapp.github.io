@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+}
+
+#heading {
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    letter-spacing: .1rem;
+    background: -webkit-repeating-linear-gradient(#13547A, #80D0C7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+canvas {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: .2rem;
+    width: 40rem;
+    height: 24rem;
+    cursor: crosshair;
+    transition: border-color .2s;
+}
+
+canvas:active {
+    border-color: #ff4754;
+}
